@@ -10,39 +10,39 @@ Accept: application/json
 
 ###
 
-# GET all users
-GET http://localhost:8000/users
+# GET all messages
+GET http://localhost:8000/messages
 Accept: application/json
 
 ###
 
-# GET a specific user by ID
-GET http://localhost:8000/users/1
+# GET a specific message by ID
+GET http://localhost:8000/messages/1
 Accept: application/json
 
 ###
 
-# POST create a new user
-POST http://localhost:8000/users
+# POST create a new message
+POST http://localhost:8000/messages
 Content-Type: application/json
 
 {
-  "name": "Charlie",
-  "age": 22
+  "user": "Stephy",
+  "content": "Podaaaaa!"
 }
 
 ###
 
-# PUT update a user by ID
-PUT http://localhost:8000/users/1
+# PUT update a message by ID
+PUT http://localhost:8000/messages/4
 Content-Type: application/json
 
 {
-  "name": "Alice Updated",
-  "age": 26
+  "user": "Stephy",
+  "content": "Epoo clg varum?"
 }
 
 ###
 
-# DELETE a user by ID
-DELETE http://localhost:8000/users/1
+# DELETE a message by ID
+DELETE http://localhost:8000/messages/2
